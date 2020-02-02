@@ -9,11 +9,11 @@
 		<title>Thea</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link href="https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600|Open+Sans:300|Lato:300&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="static/css/main.css" />
 		<noscript><link rel="stylesheet" href="static/css/noscript.css" /></noscript>
 		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-		<!-- <img src="{{url_for('static', filename='images/pic01.jpg')}}" /> -->
+		<img src="{{url_for('static', filename='static/images/thea.svg')}}" />
 		
 	</head>
 	<body class="is-preload">
@@ -26,20 +26,15 @@
 							<li><a href="#intro">Welcome</a></li>
 							<li><a href="#one">What is DR?</a></li>
 							<li><a href="#two">our solution</a></li>
-							<li><a href="#three">Get in touch</a></li>
-							<li><a href="/templates/app_home/predict.html">FUCK</a></li>
 						</ul>
 					</nav>
 				</div>
 			</section>
 
 		<!-- Wrapper -->
-			<div id="wrapper">
-				<!-- Intro -->
+			<div id="wrapper"><!-- Intro -->
 				<section id="intro" class="wrapper style1 fullscreen fade-up" 
 					style="background-image: url({{url_for('static', filename='images/background.png')}})">
-					
-
 					<!-- <img src="{{url_for('static', filename='images/pic01.jpg')}}" /> -->
 					<img id="thea-logo" src="{{url_for('static', filename='images/thea.svg')}}" alt="thea" 
 							style="position: relative;
@@ -50,172 +45,184 @@
 				
 						<div class="intro-text">
 							<h1 style="
-							font-family: 'Ubuntu', sans-serif;
 							top:-150px;
 							padding-left:50px;
 							height: 150px;
-							font-family: BrandonGrotesque;
+							font-family: 'Josefin Sans', sans-serif;
 							font-size: 100px;
 							font-weight: bold;
 							font-stretch: normal;
 							font-style: normal;
 							line-height: normal;
 							letter-spacing: normal;
-							color: #1c264a;"> treat your <br> eyes. </h1> 
+							color: #1c264a;">Treat your <br> eyes. </h1> 
 							<h3 style="
-								font-family: BrandonGrotesque;
+								font-family: 'Open Sans', sans-serif;
 								font-size: 20px;
-								font-weight: 500;
+								font-weight: 300;
 								font-stretch: normal;
 								font-style: normal;
 								line-height: normal;
 								letter-spacing: normal;
 								color: #1c264a;
-								padding-top:50px;
-								padding-left:50px">When did you last check your eyes? Don’t wait until it is too late. <br><br>
+								padding-top:30px;
+								padding-left:50px">When did you last check your eyes? Don’t wait until it's too late. <br><br>
 Diabetic retinopathy is the leading cause of blindness in working age adults. <br>Cases caught early can be treated, but the noticeable symptoms do not show <br>until the condition is irreversible.<br><br>Take the first step now at prevention by clicking on the quiz below.</h3>
 							<button style="width: 275px;
+							margin-top:10px;
+							font-family: 'Josefin Sans', sans-serif;
+							font-weight:bold;
 							left:40px;
-							top:20px;
+							top:0px;
 							height: 80px;
 							border: solid 10px #dd918e;
 							background-color: #dd918e;
 							font-size:15px">get started</button>
-				</section>
 						
 						</div>
 
-					</section>
-
 				<!-- One -->
-				<section id="one" class="wrapper style2 spotlights">
+				
+				<section id="one" class="wrapper style spotlight">
+					<div class="dr-icons">
+						<h1 style="
+						padding-top:150px;
+						padding-left:50px;
+						height: 100px;
+						font-family: 'Josefin Sans', sans-serif;
+						font-size: 100px;
+						font-weight: bold;
+						font-stretch: normal;
+						font-style: normal;
+						line-height: normal;
+						letter-spacing: normal;
+						color: #1c264a;">The facts. </h1>
+						<div class="row" style="padding-top:100px; padding-left:200px">
+							<div class="column" style="box-sizing:content-box;width: 300px; background-color:white;
+							height: 425px;
+							padding: 40px;  
+							border: 3px solid #dd918e">
+								<img id="eye_icon" src="{{url_for('static', filename='images/witness.svg')}}" alt="eyeball" 
+								style="width:90px;
+								height:90px;
+								margin-bottom:20px;
+								position:relative;margin-left:105px">
+								<h3 style="font-family:'Open Sans', sans-serif;position:relative
+								font-size: 20px;
+								font-weight: 300;
+								font-stretch: normal;
+								font-style: normal;
+								line-height: normal;
+								letter-spacing: normal;
+								color: #1c264a;
+								text-align:center">Lorem ipsum dolor  <br>
+								consectetur sed do eiusmod <br>
+								incididunt ut labore et dolore <br><br>Ut enim ad minim veniam ullamco <br><br> laboris nisi ut aliquip <br><br> ex ea commodo consequat.<br> Lorem ipsum dolor  <br>
+								consectetur sed do eiusmod <br></h3></div>
+								<div class="column" style="padding-left:200px;box-sizing:content-box;width: 300px; background-color:white;
+								height: 425px;
+								padding: 40px; 
+								margin-left:60px; 
+								border: 3px solid #dd918e">
+									<img id="pharmacy_icon" src="{{url_for('static', filename='images/pharmacy.svg')}}" alt="pharmacy"
+									style="width:90px;height:90px;margin-left:110px; margin-bottom:20px">
+									<h3 style="font-family: 'Open Sans', sans-serif;position:relative
+									font-size: 20px;
+									font-weight: normal;
+									font-stretch: normal;
+									font-style: normal;
+									line-height: normal;
+									letter-spacing: normal;
+									text-align:center;
+									color: #1c264a;
+									margin-left:10px">Lorem ipsum dolor  <br>
+									consectetur sed do eiusmod <br><br>
+									incididunt ut labore et dolore <br><br>Ut enim ad minim veniam ullamco <br><br> laboris nisi ut aliquip <br> ex ea commodo consequat.<br> Lorem ipsum dolor  <br>
+									consectetur sed do eiusmod <br> </h3>
+								</div>
+							</div>
+						</div>
 
 
-				</section>
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
+			
 				<!-- Two -->
 					<section id="two" class="wrapper style3"></section>
-						<div class="inner">
-							<h2>What we do</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-							<div class="features">
-								<section>
-									<span class="icon solid major fa-code"></span>
-									<h3>Lorem ipsum amet</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-lock"></span>
-									<h3>Aliquam sed nullam</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-cog"></span>
-									<h3>Sed erat ullam corper</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-desktop"></span>
-									<h3>Veroeros quis lorem</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-link"></span>
-									<h3>Urna quis bibendum</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon major fa-gem"></span>
-									<h3>Aliquam urna dapibus</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-							</div>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
-							</ul>
-						</div>
-					</section>
+					<h1 style="
+						padding-top:50px;
+						padding-left:70px;
+						height: 100px;
+						font-family: 'Josefin Sans', sans-serif;
+						font-size: 100px;
+						font-weight: bold;
+						font-stretch: normal;
+						font-style: normal;
+						line-height: normal;
+						letter-spacing: normal;
+						padding-bottom:150px;
+						color: #1c264a;">Our solution. </h1>
+						<div class="flex-container" style="flex; flex-direction:row">
+								<img id="question_icon" src="{{url_for('static', filename='images/question.svg')}}" alt="question" style="width:100px; height:100px;margin-left:75px;margin-right:50px; float:left">
+								<h3 style="font-family:'Open Sans', sans-serif;
+								font-size: 20px;
+								font-weight: 300;
+								font-stretch: normal;
+								font-style: normal;
+								line-height: normal;
+								letter-spacing: normal;
+								color: #1c264a">Questionnaire <br>
+									consectetur sed do eiusmod incididunt ut labore et dolore <br>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </h3>
+									<br>
+									<br>
+									<br>
 
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Get in touch</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-							<div class="split style1">
-								<section>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
-											</div>
-											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
-											</div>
-											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
-										</ul>
-									</form>
-								</section>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Address</h3>
-											<span>12345 Somewhere Road #654<br />
-											Nashville, TN 00000-0000<br />
-											USA</span>
-										</li>
-										<li>
-											<h3>Email</h3>
-											<a href="#">user@untitled.tld</a>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<span>(000) 000-0000</span>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
+									<img id="acuity_icon" src="{{url_for('static', filename='images/acuity.svg')}}" alt="acuity" style="width:100px; height:100px;margin-left:75px;margin-right:50px; float:left">
+								<h3 style="font-family:'Open Sans', sans-serif;
+								font-size: 20px;
+								font-weight: 300;
+								font-stretch: normal;
+								font-style: normal;
+								line-height: normal;
+								letter-spacing: normal;
+								color: #1c264a">Lorem ipsum dolor <br>
+									consectetur sed do eiusmod incididunt ut labore et dolore <br>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </h3>
+									<br>
+									<br>
+									<br>
+
+									<img id="photo_icon" src="{{url_for('static', filename='images/camera.svg')}}" alt="camera" style="width:100px; height:100px;margin-left:75px;margin-right:50px; float:left">
+									<h3 style="font-family:'Open Sans', sans-serif;
+									font-size: 20px;
+									font-weight: 300;
+									font-stretch: normal;
+									font-style: normal;
+									line-height: normal;
+									letter-spacing: normal;
+									color: #1c264a">Lorem ipsum dolor <br>
+										consectetur sed do eiusmod incididunt ut labore et dolore <br>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </h3>
+	
+
+
+							<div class="column">
+
+							</div>
+							<div class="column">
+
 							</div>
 						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+		
+					</div>
+				
 
 		<!-- Scripts -->
 			<script src="static/js/jquery.min.js"></script>
